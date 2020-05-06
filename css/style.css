@@ -116,8 +116,8 @@ p {
 .myWork {
   padding: 60px 30px;
   padding-top: 0;
-  
 }
+
 .workGrid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -187,11 +187,11 @@ footer li {
     grid-template-rows: 500px 500px 500px 500px 500px 500px;
     grid-template-columns: 1fr;
     grid-template-areas:  
-    'shopHopImg' 
-    'shopHopText' 
-    'tapAtlImg' 
-    'tapAtlText' 
-    'weatherGovImg' 
-    'weatherGovText';
+    'img1' 
+    'content1' 
+    'img2' 
+    'content2' 
+    'img3' 
+    'content3';
   }
 }
