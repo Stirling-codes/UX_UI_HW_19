@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: rgb(143, 192, 169, 0.5);
+  padding: 15px;
+}
+#logo {
+  max-height: 40px;
+}
+header ul {
+  float: right;
+  color: #010675;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  font-family: 'Ovo', serif;
+}
+header p {
+  display: inline-block;
+}
+h1 {
+  font-family: 'Ovo', serif;
+  font-size: 36px;
+  color: #013F35; 
+  margin: 20px;
+}
+h2 {
+  font-family: 'Ovo', serif;
+  font-size: 28px;
+  color: #013F35; 
+  margin: 50px;
+}
+h3 {
+  font-family: 'Ovo', serif;
+  font-size: 20px;
+}
+h4 {
+  font-family: 'Ovo', serif;
+  font-size: 20px;
+  color: #FAC9B8;
+}
+p {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  color: #F0F2A6;
+}
+.heroImg {
+  background-color: rgb(240, 242, 166, 0.5);
+  padding: 100px 15px;
+}
+#headshot {
+  max-width: 200px;
+}
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgb(143, 192, 169, 0.5);
+  text-align: center;
+  border-radius: 10px;
+}
+.content p {
+  color: #010675;
+}
+.btn {
+  background-color: #FAC9B8;
+  font-family: 'Ovo', serif;
+  color: #013F35; 
+  font-size: 20px;
+  padding: 12px;
+  align-items: center;
+  outline-color:  #013F35;
+  margin: 15px;
+}
+.btn.hover {
+  background-color: #FAC9B8;
+  font-family: 'Ovo', serif;
+  color: #013F35; 
+  font-size: 20px;
+  padding: 20px;
+  align-items: center;
+  outline-color:  #013F35;
+  margin: 15px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+}
+.panel {
+  width: 33%;
+  padding: 25px;
+  margin: 0px 10px;
+  background-color: #013F35;
+  border-color: rgb(143, 192, 169);
+  border-style: solid;
+  border-width: 10px;
+  align-content: center;
+  display: none;
+}
+.flexContainer h3 {
+  color: rgb(143, 192, 169);
+}
+#flip {
+  background-color: rgb(143, 192, 169);
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+  background-color: #013F35; 
+  margin: 10px;
+}
+.content2 {
+  grid-area: content2;
+  background-color: #013F35; 
+  margin: 10px;
+}
+.content3 {
+  grid-area: content3;
+  background-color: #013F35; 
+  margin: 10px;
+}
+footer {
+  background-color: rgb(143, 192, 169, 0.5);
+  padding: 5px;
+  color: #010675;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    background-color: rgb(143, 192, 169, 0.5);
+  }
+  .workGrid {
+    display: grid;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas:  
+    'shopHopImg' 
+    'shopHopText' 
+    'tapAtlImg' 
+    'tapAtlText' 
+    'weatherGovImg' 
+    'weatherGovText';
+  }
+}
